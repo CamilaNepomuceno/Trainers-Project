@@ -1,0 +1,26 @@
+/** Fictional case study website **/
+
+/** website color theme **/
+
+/*
+Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple*/
+
+/* --------------------------- Home Section ------------------------- */
+
+body{
+	
+	font-family: serif, sans-serif;
+	font-size: 16px;
+	color: rgb(44, 44, 44);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* --------------------------- End Home Section ------------------------- */
+
