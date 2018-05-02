@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 <head>
@@ -13,6 +12,17 @@
 		<!-- All major BROWSERS use this tag for SEO -->
 		<meta name="description" content="Exclusive trainers sold here at great prices, limited edition stock" />
 	
+	<!-- Google embebed Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+	<!-- Try font -->
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	
+	<!-- FONTE AWESOME -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	
+	<!-- NORMALIZE CSS RESETS FOR BROWSER COMPATIBILITY  -->
+	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+		  
 	<!-- Main CSS page being linked  -->
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css" />
 	
@@ -21,33 +31,48 @@
 	
 	<!-- ==================== Home Page section ======================= -->	
 	
-	<section>
+	<section class="homeBgImage">
 	
-		<header>
+		<header class="headerC">
 			
-			<img src="resources/img/logo.png" alt="The company logo" />
+			<div class="logoC">
+				
+				<img src="resources/img/logo.png" alt="The company logo" />
+			
+			</div>
+			
+			<div class="basketIcon">
+			<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+			</div>	
 			
 			<!-- =================== Navigation Start ========================= -->
-			<nav>
+			
+		<div class="navC">
+			
+			<span id="navBtn">&#9776; </span>
+			
+				<nav>
 				
-				<ul> 
-				<li> <a></a>Home </li>
-				<li> <a></a>products </li>
-				<li> <a></a>sales </li>
-				<li> <a></a>about </li>
-				<li> <a></a>contact </li>
-				<li> <a></a>view cart </li>
+				<ul class="menu-items"> 
+					<li> <a>Home</a> </li>
+					<li> <a>products</a> </li>
+					<li> <a>sales</a> </li>
+					<li> <a>about</a></li>
+					<li> <a>contact</a> </li>
+					<li> <a>view cart</a></li>
 				
 				</ul>
 			
-			</nav>
+				</nav>
+				
+		</div>
 			<!-- =================== End Navigation ========================== -->
 		</header>
 		
-		<div> Exclusive Trainers </div>
-		<div> Limited Edition </div>
+		<div class="slogan"> Exclusive Trainers </div>
+		<div class="mainHeading"> Limited Edition </div>
 		
-		<a href=""> NEW ARRIVALS </a>
+		 <a href="products"> <button class="newArrivalsB"> NEW ARRIVALS </button> </a> 
 	
 	</section>
 	
@@ -167,15 +192,16 @@
 		
 		<h3> Main Office </h3>
 		
-		<h4> Lumiere </h4>
-		<h4> 2 floor </h4>
-		<h4> St Clare House </h4>
-		<h4> 30-33 Minories </h4>
-		<h4> London EC3N 1DD </h4>
+		<h4> <i>Lumiere</i> </h4>
+		<h4> <i>2 floor</i> </h4>
+		<h4> <i>St Clare House</i> </h4>
+		<h4> <i>30-33 Minories</i> </h4>
+		<h4> <i>London EC3N 1DD</i> </h4>
 		
 	
 	</section>
 	<!-- ================== End Contact Section =================== -->
+	
 	
 	<!-- ================== Start Login Section ================ -->
 	<section> 
@@ -188,6 +214,7 @@
 		
 	</section>
 	<!-- ================== End Login Section ================== -->
+	
 	
 </body>
 </html>
