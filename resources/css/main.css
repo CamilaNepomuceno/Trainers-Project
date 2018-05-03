@@ -20,6 +20,8 @@ html {
 	
 }
 
+
+
 /** apply a natural box model layout to all elements **/
 
 *{
@@ -29,13 +31,31 @@ html {
 	
 }
 
+/** Embeded Fonts **/
+
+@font-face {
+	
+	font-family: '28_Days';
+	src: url(../fonts/28_days_later-webfont.eot);
+	src: url(../fonts/28_days_later-webfont.woff2)
+	format('woff2'),
+		url(../fonts/28_days_later-webfont.woff)
+	format('woff'),
+		url(../fonts/28_days_later.ttf)
+	format('truetype'),
+		url(../fonts/28_days_later-webfont.svg)
+	format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 /** sets the images and videos to be 100% of their containers **/
 
 img, video{
 	width: 100%
 }
-
+ 
 body{
 	
 	font-family: serif, sans-serif;
@@ -49,7 +69,7 @@ body{
 
 a{
 	text-decoration: none;
-}
+ }
 
 /* --------------------------- Home Section ------------------------- */
 
@@ -146,7 +166,8 @@ nav li a {
 
 .slogan {
 	
-	font-family serif; /* add custom font */
+	font-size: 2.3em;
+	font-family: '28_Days';
 	color: rgb(255, 255, 255);
 	text-align: right;
 	padding: 150px 5vw 0 0; 
@@ -165,7 +186,7 @@ nav li a {
 	margin: 50vh auto 0 auto;
 }
 
-.newArrivalsB{
+.newArrivalsB {
 	
 	display: block;
 	color: rgb(255, 255, 255);
@@ -179,6 +200,199 @@ nav li a {
 	
 }
 
+/** --------------Product Section -------------------------------------------- **/
+
+h1{
+	
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-weight:lighter;
+}
+
+.caption{
+	
+	text-align: center;
+	padding: 0 10px;
+}
+
+figure{
+	margin: 0;
+}
+
+figcaption {
+	font-size: 0.em;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+
+.fa-shopping-cart {
+	color: rgb(255, 255, 255);
+}
+
+.allProducts article button{
+	display: block; 
+	padding: 15px 20px;
+	border-radius: 5px 5px;
+	background-color: rgb(53, 38, 80);
+	border: 1px solid rgb(255, 255, 255);
+	margin: 10px 15vw 10px auto;
+}
+
+.allProducts article button a {
+	
+	color: rgb(255, 255, 255);
+	font-family: arial, sans-serif;
+	
+}
+
+article {
+	
+	/*text-align: center;*/
+	/*width: 230px;*/
+	margin: 0 15%;
+	
+}
+
+/** ----------------- Contact Section------------------------ **/ 
+
+.cont{
+	text-align: center;
+	padding: 0 10px;
+	color: rgb(255, 255, 255);
+}
+
+.allContact article button {
+	display: block; 
+	padding: 15px 20px;
+	border-radius: 5px 5px;
+	background-color: rgb(53, 38, 80);
+	border: 1px solid rgb(255, 255, 255);
+	margin: auto;
+}
+
+.allContact article button a {
+	
+	color: rgb(255, 255, 255);
+	font-family: arial, sans-serif;
+}
+
+.fa-phone {
+	color: rgb(200, 177, 250);
+	border
+}
+
+.fa-envelope {
+	color: rgb(200, 177, 250);
+}
+
+h3 {
+	font-size: 1em;
+	text-align: center;
+	font-weight: bolder;
+	color: rgb(255, 255, 255);
+}
+
+h4 {
+	font-size: 0.8em;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+.ContactBgImage {
+
+	background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.72)), url(../img/trainerContactBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	padding:  10px 0 0 0;
+	
+}
+
+/** ------------------------------- About Page ------------------- **/
+
+
+.AbP {
+	font-size: 0.9em;
+	text-align: center;
+	padding: 0 10px;
+}
+
+.AbText {
+	font-size: 0.9em;
+	text-align: center;
+	padding: 0 10px;
+}
+
+
+/** ------------------------ Mobile Styles 568PX - Resolution ---------------------**/
+
+
+@media screen and (min-width:568px){
+	
+.slogan {
+	
+	font-size: 2.5em;
+	padding: 150px 5vw 0 0; 
+	
+}
+
+.mainHeading {
+	
+	margin: 40vh auto 0 auto;
+}
+
+.newArrivalsB {	
+	
+	padding: 15px 20px;
+	margin: 0 20vw 0 35vw;
+		
+}
+
+/** --------------Product Section -------------------------------------------- **/
+
+.allProducts article button{
+	
+	margin: 10px 25vw 10px auto;
+	
+}
+
+
+}
+
+
+
+
+
+/** ------------------------ Tablet Styles 768PX - Resolution ---------------------**/
+
+@media screen and (min-width:768px){
+
+.slogan {
+	
+	font-size: 4em;
+	padding: 150px 5vw 0 0;  
+	margin: 10vh auto 10vh auto;
+}
+	
+.mainHeading {
+	
+	font-size: 4em;
+	margin: 45vh auto 0 3vw;
+}
+	
+.newArrivalsB {	
+	
+	margin: 0 20vw 0 34vw;
+	padding: 30px 40px;
+	font-size: 1.5em;
+		
+}
+	
+}
 
 
 
@@ -187,9 +401,7 @@ nav li a {
 
 
 
-
-
-
+/** ------------------------ Desktop Styles 1024PX - Resolution ---------------------**/
 
 
 
