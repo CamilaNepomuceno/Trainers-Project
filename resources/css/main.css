@@ -73,8 +73,14 @@ a{
 
 /* --------------------------- Home Section ------------------------- */
 
+.myVideo {
+	
+	display: none;
+	
+}
 .homeBgImage {
 
+	
 	position: relative;
 	background-image: url(../img/trainerHomePage.jpg);
 	background-repeat: no-repeat;
@@ -155,7 +161,7 @@ nav li a {
 	text-align: right;
 	border-top: 3px;
 	text-transform: uppercase;
-	/* font-family: serif, sans-serif;*/
+	font-family: 'Mukta', serif;
 	
 }
  /* Come back to add the additional classes to hide */
@@ -166,7 +172,7 @@ nav li a {
 
 .slogan {
 	
-	font-size: 2.3em;
+	font-size: 1.5em;
 	font-family: '28_Days';
 	color: rgb(255, 255, 255);
 	text-align: right;
@@ -221,7 +227,7 @@ figure{
 }
 
 figcaption {
-	font-size: 0.em;
+	font-size: 0.8em;
 	text-align: center;
 	margin: 0 auto;
 	
@@ -231,27 +237,38 @@ figcaption {
 	color: rgb(255, 255, 255);
 }
 
+.allProducts{
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+
 .allProducts article button{
 	display: block; 
 	padding: 15px 20px;
 	border-radius: 5px 5px;
 	background-color: rgb(53, 38, 80);
 	border: 1px solid rgb(255, 255, 255);
-	margin: 10px 15vw 10px auto;
+	margin: 2vh auto 15vh auto;
 }
 
 .allProducts article button a {
 	
 	color: rgb(255, 255, 255);
-	font-family: arial, sans-serif;
+	font-family: 'Mukta', sans-serif;
 	
 }
 
+
 article {
 	
-	/*text-align: center;*/
-	/*width: 230px;*/
-	margin: 0 15%;
+	margin: 1%;
+	text-align: center;
+	width: 230px;
+	
 	
 }
 
@@ -312,6 +329,14 @@ h4 {
 	
 }
 
+/* ============== GMaps ========== */
+
+#map {
+	
+	width: 80vw;
+	height: 80vh;
+}
+
 /** ------------------------------- About Page ------------------- **/
 
 
@@ -345,21 +370,25 @@ h4 {
 	margin: 40vh auto 0 auto;
 }
 
-.newArrivalsB {	
-	
-	padding: 15px 20px;
-	margin: 0 20vw 0 35vw;
+.newArrivalsB {
+	margin-right: 4vw;
+	margin-bottom: 0;
 		
 }
 
 /** --------------Product Section -------------------------------------------- **/
 
-.allProducts article button{
+/*.allProducts article button{
 	
 	margin: 10px 25vw 10px auto;
 	
-}
+}*/
 
+	figcaption{
+		padding:0;
+		margin-bottom: 10px;
+		height: 50px;
+	}
 
 }
 
@@ -391,17 +420,133 @@ h4 {
 	font-size: 1.5em;
 		
 }
+.homeBgImage{
+		background-position: center center;
+	}
+
+.allProducts article button {
+		margin-bottom: 0;
+	}
+	
+}
+
+/** ------------------------ Desktop Styles 1024PX - Resolution ---------------------**/
+
+
+@media screen and (min-width:1024px){
+	
+	.myVideo {
+		display: inline-block;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1000;
+		width: 100%;
+		height: auto;
+		
+	}
+	
+	.homeBgImage {
+		
+		background-image: none;
+		background: -webkit-linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.53));
+		overflow-y: hidden;
+		
+	}
+	
+	#navBtn, .basketIcon {
+		display: none;
+	}
+	
+	.menu-items{
+		display: inline;
+	}
+	
+	.logoC{
+		
+		top: 80px;
+		left: 7vw;
+		width: 100px;
+	}
+
+	.slogan {
+	
+	font-size: 3em;
+	letter-spacing: 5px;
+	text-align: right;
+	padding: 50vh 15vw 0 0; 
+		
+}
+
+	.mainHeading {
+	
+	font-size: 2.5em;
+	letter-spacing: 3px;
+	text-align: center;
+	margin: 5% 50vw 0 5vw;
+	padding: 5px 10px;
+}
+
+	.newArrivalsB {
+	
+	margin: 10vh 50vw 0 4vw;
+	padding: 30px 40px;
+	font-size: 1em;
+}
+	
+	/* ============== Navigation ========== */
+	
+	.navC{
+	
+		text-align: right;
+		border-bottom: none;
+	
+	}
+	
+	nav li a {
+		border-top: none;
+		font-size: 0.8em;
+		letter-spacing: 0.5px;
+		
+	}
+	
+	nav a:hover {
+		color: rgb(200, 177, 250);
+	}
+	
+	.menu-items a{
+		display: inline;
+		text-align: center;
+	}
+	
+	.menu-items li {
+		border-top: none;
+		display: inline;
+		padding: 38px 38px;
+	}
+	
+	.allProducts{
+		
+		column-count: 4;
+	}
 	
 }
 
 
 
+/* ============== Product ========== */
 
 
 
 
 
-/** ------------------------ Desktop Styles 1024PX - Resolution ---------------------**/
+
+
+
+
+
+
 
 
 
