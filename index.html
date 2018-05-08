@@ -26,6 +26,9 @@
 	
 	<!-- NORMALIZE CSS RESETS FOR BROWSER COMPATIBILITY  -->
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    
+    <!-- Animate .Css -->
+    <link rel="stylesheet" href="vendors/css/Animate.css" />
 		  
 	<!-- Main CSS page being linked  -->
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css" />
@@ -45,7 +48,7 @@
 		
 		<header class="headerC">
 			
-			<div class="logoC">
+			<div class="wow bounceInUp logoC">
 				
 				<img src="resources/img/logo.png" alt="The company logo" />
 			
@@ -187,14 +190,21 @@
 	
 	<!-- ================== Start About Section =================== -->
 	
-	<section>
-		
+	<section >
+        
+        <div class="about">		
 		<h1> ABOUT </h1>
 		<p class="AbP"> A brief description of our company and all the service we offer. </p>
 		
-		<iframe width="300" height="315" src="Case_Study/video/trainers.mp4" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<video class="videoFrame" src="Case_Study/video/trainers.mp4" allow="autoplay; encrypted-media" allowfullscreen></video>
 		
-		<p class="AbText"> At lumière we provide superior customer service, with a commitment to deliver distinctive products of the highest quality. Our trainers and promotional items communicate a classic, retro influence. Keeping a watchful eye on trends and styles, our in-house graphic designers work to create a unique company, group or team identity – one that sets you apart from the rest. </p>
+		<p class="AbText"> At lumière we provide superior customer service, with a commitment to deliver distinctive products of the highest quality. Our trainers and promotional items communicate a classic, retro influence. Keeping a watchful eye on trends and styles, our in-house graphic designers work to create a unique company, group or team identity – one that sets you apart from the rest.</p>
+            
+        <p class="AbText nomobile"> We are proud of our exclusive range of trainers with limited edition lines to compete with all the top brands in the world. </p>
+            
+        <p class="AbText nomobile"> Our Premier Delivery service is one of the best delivery services available online and the most affordable. </p>
+        </div>    
+            
 	
 	</section>
 	<!-- =================== End About Section ===================== -->
@@ -203,55 +213,66 @@
 	
 	<section class="ContactBgImage" >
 		<div class="allContact">
-		<article>
-		<h1> CONTACT </h1>
-		<p class="cont"> Get in touch with us via our contact form, email or our phone number. </p>
-		
-		<button> <i class="fa fa-phone" aria-hidden="true"> </i> <a> 0208 488 3444 </a> </button> <br>
-		
-		<button> <i class="fa fa-envelope" aria-hidden="true"></i> <a> Email us </a> </button>
-		
-		
-		<h3> Main Office </h3>
-			
-		
-		<!--<span class="ourAddress">
-		<address>Lumiere <br> 2nd Floor <br> St Clare House <br> 30-33 Minories <br>London EC3N 1DD
-		</address>
-		</span>	-->	
-		<h4> <i>Lumiere</i> </h4>
-		<h4> <i>2nd Floor</i> </h4>
-		<h4> <i>St Clare House</i> </h4>
-		<h4> <i>30-33 Minories</i> </h4>
-		<h4> <i>London EC3N 1DD</i> </h4>
-		</article>
+            <article>
+                <h1> CONTACT </h1>
+                <p class="cont"> Get in touch with us via our contact form, email or our phone number. </p>
+
+                <button> <i class="fa fa-phone" aria-hidden="true"> </i> <a> 0208 488 3444 </a> </button> <br>
+
+                <button> <i class="fa fa-envelope" aria-hidden="true"></i> <a> Email us </a> </button>
+
+
+                <h3> Main Office </h3>
+
+
+                <h4> <i>Lumière</i> </h4>
+                <h4> <i>2nd Floor</i> </h4>
+                <h4> <i>St Clare House</i> </h4>
+                <h4> <i>30-33 Minories</i> </h4>
+                <h4> <i>London EC3N 1DD</i> </h4>
+            </article>
 		</div>
-	
 	</section>
 	<!-- ================== End Contact Section =================== -->
 	
 	
-	<!-- ================== Start Login Section ================ -->
-	<section>
-		
-		<label> Name </label>
-		<label> Email </label>
-		<label> Message </label>
-		
-		<button> <a> SEND MESSAGE </a></button>
-		
+	<!-- ================== Start Contact Section 2 ================ -->
+    
+	<section class="ContactBgImage">
+		<div class="Contact2">
+            
+            <label> Name </label> <br/>
+            <input type="text"/> <br/>
+            <label> Email </label> <br/>
+            <input type="text"/><br/>
+            <label> Message </label><br/>
+            <textarea  rows="4"></textarea><br/>
+
+            <button> <a> SEND MESSAGE </a></button>
+		</div>
 	</section>
 	
-	<!-- ================== End Login Section ================== -->
+	<!-- ================== End Contact Section 2 ================== -->
 	
 <!-- ======================= Gmaps ============================ -->
-	<div id="map">
+	<section class="ContactBgImage">
+    <div id="map">
 	
 	The map is gonna go here
 	
 	</div>
+    
+          
+    </section>
 	
 <!-- ============================ External Links Scripts=============================== -->	
+    
+<!-- WOW .Js cdn -->
+    <script src=http://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js></script>
+    <script>
+    new WOW().init();
+    </script>
+    
 <!-- ============ Google Map API ======================= -->	
 <script src="http://maps.google.com/maps/api/js"></script>
 	
@@ -260,12 +281,14 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>	
+
+<!-- ============ Gmaps.JS ======================= -->
+<script src="vendors/script/gmaps.js"> </script>	
+    
 	
 <!-- ===================== My script================================== -->	
 <script src="resources/script/MyJs.js"> </script>	
 	
-<!-- ============ Gmaps.JS ======================= -->
-<script src="vendors/script/gmaps.js"> </script>	
 	
 	
 </body>
